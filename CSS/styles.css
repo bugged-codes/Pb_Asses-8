@@ -1,0 +1,404 @@
+body {
+    background-color: yellow;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+}
+
+.div-items {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    margin: 30px;
+}
+
+.div-items-2 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 30px;
+}
+
+.div-1 {
+    transform: skewX(-30deg);
+    animation-name: my-div-1;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes my-div-1 {
+    0% {
+        transform: skewX(-30deg);
+    }
+    50% {
+        transform: skewX(30deg);
+    }
+    100% {
+        transform: skewX(-30deg);
+    }
+    
+}
+
+.div-2 {
+    transform: scaleY(30deg);
+    animation-name: my-div-2;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes my-div-2 {
+    0% {
+        transform: skewY(30deg);
+    }
+    50% {
+        transform: skewY(-30deg);
+    }
+    100% {
+        transform: skewY(30deg);
+    }
+}
+
+.div-3 {
+    transform: rotate(360deg);
+    animation-name: my-div-3;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes my-div-3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    } 
+}
+
+.div-4-1 {
+    animation-name: my-div-4-1;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    border: 2px solid black;
+}
+
+@keyframes my-div-4-1 {
+    0% {
+        transform: scaleY(0.5);
+    }
+    50% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(0.5);
+    } 
+}
+
+.div-4-2 {
+    animation-name: my-div-4-2;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    background-color: brown;
+    border: 2px solid black;
+}
+
+@keyframes my-div-4-2 {
+    0% {
+        transform: scaleX(0.5);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0.5);
+    }
+}
+
+.div-4-3 {
+    animation-name: my-div-4-3;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    background-color: green;
+    border: 2px solid black;
+}
+
+@keyframes my-div-4-3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(100deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    } 
+}
+
+
+
+/*Page-2*/
+
+.div-items-p2 {
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    margin: 30px;
+}
+
+.p2-div-1 {
+    width: 100px;
+    transition: all 2s ;
+}
+
+.p2-div-1:hover {
+    width: 250px; 
+}
+
+.p2-div-2 {
+    width: 100px;
+    transition: all 2s ease-in;
+}
+
+.p2-div-2:hover {
+    width: 250px;
+    height: 250px;
+}
+
+.p2-div-3 {
+    width: 100px;
+    transition: all 2s linear;
+}
+
+.p2-div-3:hover {
+    width: 250px;
+}
+
+.p2-div-4 {
+    width: 100px;
+    transition: all 2s ease;
+}
+
+.p2-div-4:hover {
+    width: 250px;
+}
+
+.p2-div-5 {
+    width: 100px;
+    transition: all 2s ease-in;
+}
+
+.p2-div-5:hover {
+    width: 250px;
+}
+
+.p2-div-6 {
+    width: 100px;
+    transition: all 2s ease-out;
+}
+
+.p2-div-6:hover {
+    width: 250px;
+}
+
+.p2-div-7 {
+    width: 100px;
+    transition: all 2s ease-in-out;
+}
+
+.p2-div-7:hover {
+    width: 250px;
+}
+
+.p2-links {
+    position: relative;
+    right: 10px;
+}
+
+
+
+
+/*Page-3*/
+
+#p3 {
+    background-image: url(../Assets/Images/sky.jpg);
+    overflow: hidden;
+}
+
+.sky {
+    border: 10px solid;
+    border-color:  white green white orange;
+    background-image: url(./images/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 99%;
+    height: auto;
+}
+
+.div-heading-p3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.p3-h1 {
+    background-color: orange;
+    margin-left: 10px;
+}
+
+.p3-h2 {
+    background-color: white;
+    margin-left: 10px;
+}
+
+.p3-h3 {
+    background-color: green;
+    margin-left: 10px;
+}
+
+.sun-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    float: right;
+    animation-name: sun-img-1;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sun-img-1 {
+    0%{
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-150px);
+    }
+    100% {
+        transform: translateX(-300px);
+    }
+}
+
+.buildings-img {
+    width: auto;
+    height: 300px;
+    background-image: url(./images/buildings.png);
+    background-size: cover;
+    position: relative;
+    top: 5px;
+    background-position: center;
+    background-repeat: repeat-x;
+    animation-name: buildings-img-1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: -1;
+
+}
+
+@keyframes buildings-img-1 {
+    100% {
+        transform: translateX(-400px);
+    }   
+}
+
+.road-img {
+    width: auto;
+    height: 17rem;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    animation-name: road-img-2;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+@keyframes road-img-2 {
+    100% {
+        transform: translateX(-400px);
+    }
+    
+}
+
+.flag-img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 385px;
+    right: 170px;
+}
+
+.car-img {
+    position: relative;
+    bottom: 293px;
+    left: 100px;
+    width: 400px;
+    height: auto;
+    animation-name: car-img-3;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes car-img-3 {
+    0% {
+        transform: translateY(-1px);
+    }
+    50% {
+        transform: translateY(1px);
+    }
+    100% {
+        transform: translateY(-1px);
+    }
+}
+
+.wheel-1 {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    bottom: 300px;
+    right: 268px;
+    animation-name: wheel-1;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wheel-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wheel-2 {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    bottom: 300px;
+    right: 97px;
+    animation-name: wheel-2;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes wheel-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
